@@ -1,0 +1,15 @@
+{
+  "name": "house-alert",
+  "version": "0.0.1",
+  "description": "Scrape house builders to be alerted when new properties get added",
+  "main": "scrape.js",
+  "author": "Ruan Odendaal",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "dotenv": "^4.0.0",
+    "request": "^2.83.0",
+    "slackbots": "^1.1.0"
+  },
+  "repository": "https://github.com/ruanodendaal/house-alert",
+  "license": "MIT"
+}
