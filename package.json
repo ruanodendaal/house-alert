@@ -4,9 +4,13 @@
   "description": "Scrape house builders to be alerted when new properties get added",
   "main": "scrape.js",
   "author": "Ruan Odendaal",
+  "scripts": {
+    "start": "node scrape.js"
+  },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "dotenv": "^4.0.0",
+    "pusher-feeds-server": "^0.8.1",
     "request": "^2.83.0",
     "slackbots": "^1.1.0"
   },
