@@ -2,6 +2,7 @@ require('dotenv').config();
 const request = require('request');
 const cheerio = require('cheerio');
 const SlackBot = require('slackbots');
+const express = require('express');
 
 let greatDenhamPark = {
   location: process.env.LOCATION_ONE,
@@ -14,9 +15,6 @@ let ripleyView = {
   housesToMatch: 'winstone',
   developmentSite: 'Ripley View'
 };
-
-findHouses(greatDenhamPark);
-findHouses(ripleyView);
 
 // ********************
 
@@ -80,3 +78,12 @@ function sendMessage(settings, details) {
 
   console.log('finished');
 }
+
+const app = express();
+
+app.get('/', function(req, res) {
+  findHouses(greatDenhamPark);
+  findHouses(ripleyView);
+});
+
+app.listen(3000, () => console.log('Example app listening on port 3000!'));
