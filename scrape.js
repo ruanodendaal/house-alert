@@ -23,7 +23,8 @@ function findHouses(args) {
     {
       url: args.location,
       headers: {
-        'User-Agent': 'Some crazy browser'
+        'User-Agent':
+          'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
       }
     },
     function(err, resp, body) {
