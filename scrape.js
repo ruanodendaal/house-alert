@@ -15,7 +15,7 @@ export default function findHouses(args) {
       }
     },
     function(err, resp, body) {
-      var $ = cheerio.load(resp.body);
+      var $ = cheerio.load(body);
 
       // store
       let totalHomes = $('.propertySearchHeader.plotResultsHeader h2').text();
