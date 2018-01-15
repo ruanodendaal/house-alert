@@ -2,7 +2,7 @@
   "name": "house-alert",
   "version": "0.0.1",
   "description": "Scrape house builders to be alerted when new properties get added",
-  "main": "scrape.js",
+  "main": "index.js",
   "author": "Ruan Odendaal",
   "scripts": {
     "start": "babel-node index.js --presets es2015,stage-2"

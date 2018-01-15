@@ -19,6 +19,7 @@ let ripleyView = {
 app.get('/', function(req, res) {
   findHouses(greatDenhamPark);
   findHouses(ripleyView);
+  res.send('Successful');
 });
 
 var port = process.env.PORT || 8080;
