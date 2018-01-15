@@ -28,7 +28,7 @@ function findHouses(args) {
       }
     },
     function(err, resp, body) {
-      var $ = cheerio.load(body);
+      var $ = cheerio.load(resp.body);
 
       // store
       let totalHomes = $('.propertySearchHeader.plotResultsHeader h2').text();
