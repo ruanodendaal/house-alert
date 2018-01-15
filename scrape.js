@@ -5,8 +5,7 @@ const SlackBot = require('slackbots');
 
 // ********************
 
-function findHouses(args) {
-  console.log(args);
+export default function findHouses(args) {
   request.get(
     {
       url: args.location,
@@ -67,5 +66,3 @@ function sendMessage(settings, details) {
 
   console.log('finished');
 }
-
-module.exports = { findHouses: findHouses };

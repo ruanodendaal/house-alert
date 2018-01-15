@@ -1,6 +1,5 @@
 require('dotenv').config();
-const findHouses = require('./scrape');
-
+import findHouses from './scrape';
 const express = require('express');
 
 const app = express();
@@ -18,8 +17,8 @@ let ripleyView = {
 };
 
 app.get('/', function(req, res) {
-  findHouses.findHouses(greatDenhamPark);
-  findHouses.findHouses(ripleyView);
+  findHouses(greatDenhamPark);
+  findHouses(ripleyView);
 });
 
 var port = process.env.PORT || 8080;
